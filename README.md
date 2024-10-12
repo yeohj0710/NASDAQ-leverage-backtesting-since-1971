@@ -48,6 +48,12 @@ pip install pandas matplotlib numpy xlsxwriter
 ========================================
 ```
 
+![investment_vs_asset_value](https://github.com/user-attachments/assets/077b3e6b-99bf-4bf9-bf0d-a98b8798ee64)
+
+
+![nasdaq_index_comparison](https://github.com/user-attachments/assets/f4ca3829-e1f4-4566-8e70-e030a113d1d6)
+
+
 자세한 데이터는 `output/investment_simulation.xlsx`에서 확인하세요.
 
 ## 파일 생성
