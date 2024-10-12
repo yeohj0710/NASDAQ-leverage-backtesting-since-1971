@@ -96,15 +96,16 @@ pip install pandas matplotlib numpy xlsxwriter
 자세한 데이터는 './output/investment_simulation.xlsx'에서 확인하세요.
 ```
 
-![investment_vs_asset_value](https://github.com/user-attachments/assets/077b3e6b-99bf-4bf9-bf0d-a98b8798ee64)
+위와 같이 두 레버리지 ETF를 각각 적립식 매수했을 때의 총 자산과 최종 수익률을 계산해 줍니다.
 
-![nasdaq_index_comparison](https://github.com/user-attachments/assets/f4ca3829-e1f4-4566-8e70-e030a113d1d6)
 
-두 레버리지 ETF를 각각 적립식 매수했을 때의 총 자산과 최종 수익률을 계산해 줍니다.
+![image](https://github.com/user-attachments/assets/419a510a-28a4-4520-98e8-b83510efbb70)
 
-또한 제공되는 차트를 통해 두 전략 중 어떤 것이 나은지 비교할 수 있고, 대략적인 추이도 확인할 수 있습니다.
+![image](https://github.com/user-attachments/assets/420c6011-7e30-453d-befa-00d325548f6e)
 
-정확한 매달 수익률과 총 자산은 모두 계산되어 `output/investment_simulation.xlsx`에 저장되니 더 자세히 분석할 수 있습니다.
+또한 위와 같이 제공되는 차트를 통해 두 전략 중 어떤 것이 나은지 비교할 수 있고, 대략적인 추이도 확인할 수 있습니다.
+
+정확한 매달 수익률과 총 자산은 모두 계산되어 `output/investment_simulation.xlsx`에 저장되니, 이를 더 자세히 분석할 수 있습니다.
 
 ## 생성되는 파일
 
