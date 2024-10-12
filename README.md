@@ -32,13 +32,14 @@
 
 ## 실행 방법
 
-`nasdaq_investment_simulation.py` 파일만 실행하면 됩니다:
+**실행 방법은 매우 간단합니다. 하나만 하면 됩니다.**
+**오직 `nasdaq_investment_simulation.py` 파일만 실행하면 됩니다:**
 
 ```bash
 python nasdaq_investment_simulation.py
 ```
 
-또는 파이썬을 실행할 수 있는 프로그램이 있으면 자유롭게 위 코드를 실행하면 됩니다.
+**또는 파이썬을 실행할 수 있는 프로그램이 있으면 자유롭게 `nasdaq_investment_simulation.py`를 실행하면 됩니다.**
 
 필요한 패키지가 설치되어 있지 않을 경우, 아래 명령어를 사용하여 설치하세요:
 
