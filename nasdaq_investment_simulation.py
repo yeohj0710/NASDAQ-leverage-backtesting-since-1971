@@ -63,10 +63,10 @@ def main():
     print("===== 나스닥 적립식 매수 시뮬레이션 =====")
 
     leverage_ratio_1 = get_float_input(
-        "차트를 확인할 첫 번째 레버리지 비율을 입력하세요 (예: 2.25): ", min_value=0
+        "차트를 확인할 첫 번째 레버리지 비율을 입력하세요 (예: 2.25): "
     )
     leverage_ratio_2 = get_float_input(
-        "차트를 확인할 두 번째 레버리지 비율을 입력하세요 (예: 0.75): ", min_value=0
+        "차트를 확인할 두 번째 레버리지 비율을 입력하세요 (예: -3): "
     )
     start_month = get_date_input(
         "적립식 매수를 시작할 연과 월을 입력하세요 (예: 1972 2): "
