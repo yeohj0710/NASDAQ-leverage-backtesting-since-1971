@@ -231,29 +231,34 @@ def main():
         output_df[f"누적 총 자산({leverage_ratio_2}배)"],
         label=f"누적 총 자산 ({leverage_ratio_2}배)",
     )
-    ax2.set_title(
-        "총 투자 금액과 누적 총 자산 비교", fontproperties=font_prop, fontsize=16
+    fig2.text(
+        0.5,
+        0.95,
+        "총 투자 금액과 누적 총 자산 비교",
+        ha="center",
+        fontproperties=font_prop,
+        fontsize=16,
+    )
+    fig2.text(
+        0.5,
+        0.9,
+        f"(나스닥 레버리지 ETF를 매달 {monthly_investment // 10000:,.0f}만원씩 적립식 매수했을 경우)",
+        ha="center",
+        fontproperties=font_prop,
+        fontsize=12,
     )
     ax2.set_xlabel("날짜", fontproperties=font_prop)
     ax2.set_ylabel("금액 (원)", fontproperties=font_prop)
     ax2.legend(prop=font_prop)
     ax2.grid(True)
     ax2.yaxis.set_major_formatter(ticker.FuncFormatter(lambda x, pos: f"{int(x):,}원"))
-    fig2.tight_layout()
+    fig2.tight_layout(rect=[0, 0, 1, 0.9])
 
     fig1.savefig("./output/nasdaq_index_comparison.png", dpi=300)
-    print(
-        "나스닥 지수 비교 차트 이미지가 '/output/nasdaq_index_comparison.png'로 저장되었습니다."
-    )
-
     fig2.savefig("./output/investment_vs_asset_value.png", dpi=300)
-    print(
-        "총 투자 금액과 누적 총 자산 비교 차트 이미지가 '/output/investment_vs_asset_value.png'로 저장되었습니다."
-    )
-
-    plt.show()
 
     output_file = "./output/investment_simulation.xlsx"
+
     try:
         with pd.ExcelWriter(output_file, engine="xlsxwriter") as writer:
             output_df.to_excel(writer, sheet_name="투자 결과", index=False)
@@ -468,7 +473,15 @@ def main():
     print(f"  - 최종 수익률: {final_return_2:.2f}% ({final_return_ratio_2:.2f}배)")
     print("=" * 40)
     print("시뮬레이션이 완료되었습니다.")
+    print(
+        "나스닥 지수 비교 차트 이미지가 '/output/nasdaq_index_comparison.png'로 저장되었습니다."
+    )
+    print(
+        "총 투자 금액과 누적 총 자산 비교 차트 이미지가 '/output/investment_vs_asset_value.png'로 저장되었습니다."
+    )
     print(f"자세한 데이터는 '{output_file}'에서 확인하세요.")
+
+    plt.show()
 
 
 if __name__ == "__main__":
